@@ -1,0 +1,53 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.gradle": true,
+    },
+    "explorer.fileNesting.patterns": {
+        // Padrões específicos para Java
+        "pom.xml": "pom.*.xml, .mvn/*, mvnw, mvnw.cmd",
+        "build.gradle": "*.gradle, *.gradle.kts, gradle.*, gradle*, gradlew, gradlew.bat",
+        "application.yml": "application*.yml, application*.yaml, application*.properties",
+        "application.properties": "application*.properties, application*.yml, application*.yaml",
+        // Agrupamento de arquivos de teste
+        "*.java": "${capture}Test.java, ${capture}IT.java, ${capture}Tests.java",
+        // Configurações do projeto
+        ".project": ".classpath, .settings/*, .factorypath",
+        "README.md": "CHANGELOG.*, CONTRIBUTING.*, LICENSE, LICENSE.*, CODE_OF_CONDUCT.*, SECURITY.*, HELP.md"
+    },
+    "material-icon-theme.folders.associations": {
+        "main": "app",
+        "test": "test",
+        "resources": "resource",
+        "config": "config",
+        "controller": "controller",
+        "service": "database",
+        "repository": "Repository",
+        "entity": "Class",
+        "model": "Class",
+        "dto": "Interface",
+        "mapper": "Utils",
+        "exception": "Error",
+        "security": "Lock",
+        "validation": "Rules",
+        "util": "Utils",
+        "component": "Plugin",
+        "aspect": "Decorators",
+        "interceptor": "Middleware",
+        "annotations": "Decorators"
+    },
+    "[java]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
+    "[yaml]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.autoIndent": "advanced"
+    },
+}
