@@ -50,4 +50,5 @@
         "editor.insertSpaces": true,
         "editor.autoIndent": "advanced"
     },
+    "java.compile.nullAnalysis.mode": "automatic",
 }
